@@ -26,7 +26,7 @@ public class TXTToSpeech
     		
     		System.out.println("PRESS 1 : WANT TO WRITE TEXT IN FILE");
     		System.out.println("PRESS 2 : WANT TO LISTEN TEXT IN FILE");
-    		System.out.println("PRESS 3 : WANT TO WRITE AND LISTEN TEXT IN FILE");
+    		System.out.println("PRESS 3 : WANT TO LISTEN AND WRITE TEXT IN FILE");
     	
     	    int in = sc.nextInt();
     	
@@ -65,7 +65,7 @@ public class TXTToSpeech
     	    			}
     	    			break;
     	    	
-    	    	case 3: System.out.println("Enter the text you want to write and listen in file");
+    	    	case 3: System.out.println("Enter the text you want to listen and write in file");
     	    			String name2=b.readLine();
     	    			FileWriter fw2=new FileWriter("Voice.txt");
     	    			BufferedWriter bw2=new BufferedWriter(fw2);
@@ -105,5 +105,6 @@ public class TXTToSpeech
     	    i = sc.nextInt();
     	}
     	while(i==1);
+    	System.out.println("END");
     }
 }
